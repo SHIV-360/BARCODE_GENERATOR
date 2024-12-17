@@ -64,7 +64,7 @@ def encode_to_barcode(data):
     barcode_pattern += STOP_CODE
     return barcode_pattern
 
-def draw_barcode(barcode_pattern, file_name="barcode.png", bar_width=3, bar_height=100):
+def draw_barcode(barcode_pattern, file_name="barcode_new.png", bar_width=3, bar_height=100):
     """
     Draws a barcode from the binary pattern and saves it as an image.
     """
@@ -204,8 +204,8 @@ def generate_barcode(data):
     try:
         barcode_pattern = encode_to_barcode(data)
         print(barcode_pattern)  # Optional: Debugging line
-        draw_barcode(barcode_pattern, file_name="barcode.png")
-        barcode_img = Image.open("barcode.png")
+        draw_barcode(barcode_pattern, file_name="Barcode_new.png")
+        barcode_img = Image.open("barcode_new.png")
         barcode_img_tk = ImageTk.PhotoImage(barcode_img.resize((400, 100)))
         barcode_image_label.config(image=barcode_img_tk)
         barcode_image_label.image = barcode_img_tk

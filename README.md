@@ -4,9 +4,13 @@ Here is a sample `README.md` for the code you provided:
 # Barcode and QR Code Generator with Tkinter
 
 This is a Python application that allows users to generate, scan, and customize QR codes and barcodes using the Tkinter GUI framework. The application provides three main functionalities:
-
+![My Image1](image1.png)
 1. **QR Code Generator** - Allows users to create a QR code from text or URL with custom colors.
+
+![My Image2](image2.png)
 2. **Barcode Generator** - Allows users to generate barcodes using the Code 128 encoding scheme.
+
+![My Image3](image3.png)
 3. **QR Code Scanner** - Allows users to upload an image and scan the QR code present in the image.
 
 ## Features
